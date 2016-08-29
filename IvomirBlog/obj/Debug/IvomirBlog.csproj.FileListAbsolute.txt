@@ -159,6 +159,5 @@ C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\bin\Microsoft.Owin.S
 C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\obj\Debug\IvomirBlog.csprojResolveAssemblyReference.cache
 C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\obj\Debug\IvomirBlog.dll
 C:\Users\sprel\OneDrive\Documents\GitHub\BlogRep\IvomirBlog\obj\Debug\IvomirBlog.pdb
