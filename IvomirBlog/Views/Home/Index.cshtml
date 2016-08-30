@@ -2,38 +2,25 @@
     ViewBag.Title = "Home Page";
 }
 
+@model List<IvomirBlog.Models.Post>
+
 <section class="row">
-    <article class="post col-md-6">
-        <h1 class="title">Title</h1>
-        <div class="about">
-            Posted by <i>Ivomir Ivanov</i>
-        on <strong>12-Jul-2016</strong>
-        </div>
-        <div class="body">
-            Тяло на публикациятаааааа... 
-            <p>Текст текст текст текст...</p>
-        </div>
-    </article>
-    <article class="post col-md-6">
-        <h1 class="title">Title</h1>
-        <div class="about">
-            Posted by <i>Ivomir Ivanov</i>
-            on <strong>12-Jul-2016</strong>
-        </div>
-        <div class="body">
-            Тяло на публикациятаааааа...
-            <p>Текст текст текст текст...</p>
-        </div>
-    </article>
-    <article class="post col-md-6">
-        <h1 class="title">Title</h1>
-        <div class="about">
-            Posted by <i>Ivomir Ivanov</i>
-            on <strong>12-Jul-2016</strong>
-        </div>
-        <div class="body">
-            Тяло на публикациятаааааа...
-            <p>Текст текст текст текст...</p>
-        </div>
-    </article>
+    @foreach (var post in Model)
+    {
+        <article class="post col-md-6">
+            <h1 class="title">@post.Title</h1>
+            <div class="about">
+                Posted
+                @if (post.Author != null)
+                {
+                    @:by
+                    <i>@post.Author.FullName (@post.Author.UserName)</i>
+                }                
+                on <strong>@post.Date</strong>
+            </div>
+            <div class="body">
+                @Html.Raw(post.Body)
+            </div>
+        </article>
+    }
 </section>
