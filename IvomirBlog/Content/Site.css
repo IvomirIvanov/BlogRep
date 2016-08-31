@@ -26,7 +26,12 @@ textarea {
     margin-top:25px;
 }
 .post>h1, .post>div {
-    background: #ff6a00;
     margin: 0;
     padding: 5px;
+}
+.BlogInfo>h1, .BlogInfo>div {
+    text-align:center;
+}
+.BlogInfoTitle {
+    text-align:center;
 }

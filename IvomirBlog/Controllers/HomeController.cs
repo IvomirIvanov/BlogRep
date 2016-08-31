@@ -14,6 +14,10 @@ namespace IvomirBlog.Controllers
             var db = new ApplicationDbContext();
             var post = db.Posts.OrderByDescending(p => p.Date).Take(3);
             return View(post.ToList());
-        }        
+        }      
+        public ActionResult BlogInfo()
+        {
+            return View();
+        }  
     }
 }
