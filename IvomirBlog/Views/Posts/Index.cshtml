@@ -1,4 +1,7 @@
-﻿@model IEnumerable<IvomirBlog.Models.Post>
+﻿@using IvomirBlog.Classes;
+@using IvomirBlog.Models;
+
+@model IEnumerable<Post>
 
 @{
     ViewBag.Title = "Index";
@@ -20,7 +23,12 @@
         <th>
             @Html.DisplayNameFor(model => model.Date)
         </th>
-        <th></th>
+        <th>
+            Author
+        </th>
+        <th>
+            Options
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -29,10 +37,20 @@
             @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Body)
-        </td>
+            @Utils.CutText(item.Body)
+        </td>        
         <td>
             @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @if (item.Author != null)
+            {
+                @item.Author.UserName
+            }
+            else
+            {
+                @:<i>No Author</i>
+            }
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

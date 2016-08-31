@@ -19,7 +19,8 @@ namespace IvomirBlog.Models
         [StringLength(200)]
         public string Title { get; set; }
 
-        [Required]        
+        [Required]
+        [DataType(DataType.MultilineText)]        
         public string Body { get; set; }
 
         [Required]
