@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: antiquewhite;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -34,4 +35,14 @@ textarea {
 }
 .BlogInfoTitle {
     text-align:center;
+}
+.post {
+    padding: 10px;
+    border:3px dotted black;
+    border-radius:10px;
+}
+.table {
+    padding: 10px;
+    border:3px dotted black;
+    border-radius:100px;
 }
